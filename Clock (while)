@@ -11,7 +11,7 @@ int main()
     printf("Inicio do Loop: \n\n\n\n");
 
 while(1){
-    printf("\r      Hora: %2dh:%2dm:%2ds", h, m, s);
+    printf("\r       Hora: %2dh:%2dm:%2ds", h, m, s);
         s++;
     if(s==60){
         m++;
