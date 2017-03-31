@@ -1,39 +1,39 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
+#include <conio.h>
 
 int main()
 {
     int h,m,s;
     h=m=s=0;
 
-while(1){
-    printf("\n\n");
-    printf("  Analog Clock:\n\n");
+while(!kbhit()){
+    printf("                            Press Any Key To Exit\n");
 
     if(h<10 && m<10 && s<10){
-        printf("\r                               Time: 0%d:0%d:0%d\n\n", h, m, s);
+        printf("\r                               Time: 0%d:0%d:0%d\n                                Analog Clock:\n\n", h, m, s);
     }
     if(h<10 && m<10 && s>=10){
-        printf("\r                               Time: 0%d:0%d:%d\n\n", h, m, s);
+        printf("\r                               Time: 0%d:0%d:%d\n                                Analog Clock:\n\n", h, m, s);
     }
     if(h<10 && m>=10 && s<10){
-        printf("\r                               Time: 0%d:%d:0%d\n\n", h, m, s);
+        printf("\r                               Time: 0%d:%d:0%d\n                                Analog Clock:\n\n", h, m, s);
     }
     if(h>=10 && m<10 && s<10){
-        printf("\r                               Time: %d:0%d:0%d\n\n", h, m, s);
+        printf("\r                               Time: %d:0%d:0%d\n                                Analog Clock:\n\n", h, m, s);
     }
     if(h<10 && m>=10 && s>=10){
-        printf("\r                               Time: 0%d:%d:%d\n\n", h, m, s);
+        printf("\r                               Time: 0%d:%d:%d\n                                Analog Clock:\n\n", h, m, s);
     }
     if(h>=10 && m>=10 && s<10){
-        printf("\r                               Time: %d:%d:0%d\n\n", h, m, s);
+        printf("\r                               Time: %d:%d:0%d\n                                Analog Clock:\n\n", h, m, s);
     }
     if(h>=10 && m<10 && s>=10){
-        printf("\r                               Time: %d:0%d:%d\n\n", h, m, s);
+        printf("\r                               Time: %d:0%d:%d\n                                Analog Clock:\n\n", h, m, s);
     }
     if(h>=10 && m>=10 && s>=10){
-        printf("\r                               Time: %d:%d:%d\n\n", h, m, s);
+        printf("\r                               Time: %d:%d:%d\n                                Analog Clock:\n\n", h, m, s);
     }
 
     	if((h==0 || h==12) && (m>=0 && m<5)){
